@@ -11250,10 +11250,53 @@ pricing-table-subtitle {
   font-weight: normal; }
 
 .pricing-plan-cost {
-  font-size: 25px;
-  color: #000;
+  font-size: 33px;
+  color: #10bb87;
   font-weight: bold;
   margin-bottom: 29px; }
+
+.pricing-plan-cost-discount{
+  font-size: 15px;
+  text-decoration: line-through;
+  color: rgba(255, 100, 100, 0.95);
+  font-weight: bold;
+}
+.card .discount{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.card .discount::before{
+  content: 'Promoção';
+  position: absolute;
+  width: 250px;
+  height: 40px;
+  background-color: #b71a3b;
+  transform: rotate(-45deg) translateY(-40px);
+  box-shadow: 0 10px 15px rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.card .discount::after{
+  content: ' ';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  bottom: 0;
+  left: 0;
+
+}
 
 .pricing-plan-icon {
   display: inline-block;
@@ -11284,7 +11327,7 @@ pricing-table-subtitle {
   font-size: 16px;
   font-weight: bold;
   width: 145px;
-  height: 60px;
+  height: 100px;
   border-radius: 22.5px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
