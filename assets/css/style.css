@@ -11324,3 +11324,8 @@ pricing-table-subtitle {
       -webkit-transform: translateY(3px);
               transform: translateY(3px);
       box-shadow: none; }
+
+
+#contact .form .row > *{
+  padding: 0 .25rem;
+}
